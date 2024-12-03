@@ -140,9 +140,9 @@ p {
 }
 
 .container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+    max-width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .zagolovok-one {
@@ -729,4 +729,335 @@ p {
 
 .terms-link {
   color: #4d5ae5;
+}
+
+@media (min-width: 768px) {
+  .modal-overlay-window{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-window {
+    width: 402px;
+  }
+}
+@media (min-width: 756px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    padding-left: 108px;
+  }
+
+    .container-link-paragraph-footer {
+    align-items: baseline;
+    margin: 0;
+  }
+
+  .container-social-links {
+    margin: 0;
+  }
+
+  .footer-paragraph {
+    text-align: left;
+  }
+
+  .modal-overlay {
+    align-items: baseline;
+  }
+
+  .form-overlay {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .label-form-overlay {
+    width: 264px;
+  }
+}
+
+@media (min-width: 1156px) {
+  .footer-container {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    margin: 0 auto;
+    padding: 0 15px;
+    gap: 0;
+  }
+
+    .container-link-paragraph-footer {
+    margin-right: 120px;
+  }
+
+  .container-social-links {
+    margin-right: 80px;
+  }
+
+  .label-form-overlay {
+    opacity: 1;
+  }
+
+  .label-form-overlay::placeholder {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 756px) {
+  .spisok-four {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .spisok-kontent-fourth-section {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (min-width: 1156px) {
+  .spisok-four {
+    row-gap: 48px;
+  }
+
+  .spisok-kontent-fourth-section {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+}
+
+@media (min-width: 768px) {
+  .spisok-three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  .teamcards {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1156px) {
+  .teamcards {
+    flex-wrap: nowrap;
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+@media (min-width: 756px) {
+  .zagolovokh-three {
+    text-align: left;
+  }
+
+  .spisoktwo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .spisokkontent {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (min-width: 1156px) {
+  .spisoktwo {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .spisokkontent {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .box-section-one {
+    display: flex;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    height: 112px;
+    background: #f4f4fd;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .zagolovokh-three {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .paragraph {
+    font-weight: 400;
+  }
+}
+@media (min-width: 1156px) {
+  .section-one {
+    padding: 188px 0;
+    max-width: 1440px;
+  }
+
+  .section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .section-one {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/hero-image-pc-x2.jpg);
+    }-pc-x2.jpg);
+    }
+  }
+
+  .zagolovok-one {
+    margin-bottom: 48px;
+  }
+
+@media (min-width: 756px) {
+  .section-one {
+    padding: 112px 0;
+    max-width: 768px;
+  }
+
+  .section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .section-one {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/hero-image-tablet-x2.jpg);
+    }
+  }
+
+  .zagolovok-one{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    max-width: 496px;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .section-one{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/hero-image-mobile-x2.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  .linkstudio {
+    display: flex;
+    gap: 40px;
+  }
+
+  .silka-head {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px 0;
+    display: block;
+  }
+
+  .studios {
+    color: #404bbf;
+  }
+
+  .studios::after {
+    content: "";
+    border-radius: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+  }
+
+  .address {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #434455;
+    font-style: normal;
+    margin-left: auto;
+  }
+
+  .adres-spisok {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .silka-adress {
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .silka-adress:hover,
+  .silka-adress:focus {
+    color: #404bbf;
+  }
+
+  .btn-menu,
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1156px) {
+  .address {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .adres-spisok {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .section {
+    padding: 120px 0;
+  }
 }
