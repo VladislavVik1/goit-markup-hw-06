@@ -224,13 +224,23 @@ p {
         display: flex;
     }
 }
-
+.links{
+    padding-top: 48px;
+}
 .social-icons-list {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
-
+.social-icons-list-mobile {
+    display: flex;
+    gap: 40px;
+}
+.adres-spisok-mobile{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
 .social-icons {
     width: 40px;
     height: 40px;
@@ -349,8 +359,29 @@ p {
     }
 }
 
-@media screen and (min-width: 1158px) {}
-
+@media screen and (min-width: 1158px) {
+    .spisok-three{
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+.spisoktwo{
+    flex-wrap: nowrap;
+}
+.container-link-paragraph-footer{
+    padding-right: 100px;
+}
+.container-social-links{
+    padding-right: 30px;
+}
+.input-form{
+    opacity: 1;
+    color: #fff;
+}
+.input-form::placeholder {
+    opacity: 1;
+    color: #fff;
+}
+}
 .teamcards {
     background-color: #ffffff;
     width: 264px;
@@ -726,6 +757,42 @@ p {
         max-width: 264px;
     }
 }
+.zagolovok-one-mobile{
+    padding-bottom: 40px;
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+}
+.zagolovok-one-mobile:hover, .zagolovok-one-mobile:focus{
+    color: #404bbf;
+}
+.silka-adress-mobile{
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+        font-family: "Roboto", sans-serif;
+}
+.silka-adress-mobile:hover, .silka-adress-mobile:focus{
+    color: #4d5ae5;
+}
+.social-link-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link-mobile:focus,
+.social-link-mobile:hover {
+    background-color: #404bbf;
+}
 
 @media screen and (min-width: 1158px) {
     .adres-spisok {
@@ -769,9 +836,9 @@ p {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -800,7 +867,7 @@ p {
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: none;
+    
 }
 
 .modal-window {
@@ -817,8 +884,18 @@ p {
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
+    display: none;
 }
-
+@media screen and (min-width: 1158px){
+    .modal-window{
+        width: 408px;
+    }
+}
+@media screen and (min-width: 768px){
+    .modal-window{
+        width:408px;
+    }
+}
 .button-modal-window {
     position: absolute;
     top: 24px;
@@ -855,6 +932,10 @@ p {
 
 .icon-close:hover .icon-close:focus {
     fill: #ffffff;
+}
+.one{
+    border-radius: 100%;
+    opacity: 0.1;
 }
 
 .paragraph-modal-window {
