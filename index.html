@@ -42,21 +42,25 @@
     </div>
     <div class="mobile-menu">
       <div class="container mobile-menu-container">
-        <button class="mobile-menu-close"><svg class="icon-close one" width="8" height="8">
+        <button class="mobile-menu-close">
+          <svg class="icon-close one" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
-        </svg></button>
+        </svg>
+      </button>
         <nav class="mobile-menu-nav">
-          <h1 class="zagolovok-one-mobile">Studio</h1>
-          <h1 class="zagolovok-one-mobile">Portfolio</h1>
-          <h1 class="zagolovok-one-mobile">Contacts</h1>
+          <ul class="nav-mobile">
+            <li class="li-mobile"><a href="index.html" class="link-mobile-studio">Studio</a></li>
+            <li class="li-mobile"><a href="index.html" class="link-mobile">Portfolio</a></li>
+            <li class="li-mobile"><a href="index.html" class="link-mobile">Contacts</a></li>
+          </ul>
         </nav>
         <address>
           <ul class="adres-spisok-mobile">
             <li class="count-spisok">
-              <a href="mailto:info@devstudio.com" class="silka-adress-mobile">info@devstudio.com</a>
+              <a href="tel:+110001111111" class="silka-adress-mobile-number">+11 (000) 111-11-11</a>
             </li>
             <li class="count-spisok">
-              <a href="tel:+110001111111" class="silka-adress-mobile">+11 (000) 111-11-11</a>
+            <a href="mailto:info@devstudio.com" class="silka-adress-mobile">info@devstudio.com</a>
             </li>
           </ul>
         </address>
@@ -64,28 +68,28 @@
           <ul class="social-icons-list-mobile">
           <li class="social-icons">
             <a href="/index.html" class="social-link-mobile">
-              <svg class="icon" width="16" height="16">
+              <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social-icons">
             <a href="/index.html" class="social-link">
-              <svg class="icon" width="16" height="16">
+              <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-icons">
             <a href="/index.html" class="social-link">
-              <svg class="icon" width="16" height="16">
+              <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#linkedin"></use>
               </svg>
             </a>
           </li>
           <li class="social-icons">
             <a href="/index.html" class="social-link">
-              <svg class="icon" width="16" height="16">
+              <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#twitter"></use>
               </svg>
             </a>
@@ -338,7 +342,7 @@
         <ul class="spisok-four">
           <li class="spisok-kontent-fourth-section">
             <div class="container-image">
-              <img src="./images/img6.jpg" alt="Banking app" width="288" />
+              <img srcset="./images/img6.jpg x1, ./images/portfolio1-x2.jpg" src="./images/img6.jpg" alt="Banking app" width="288" />
               <p class="paragraph-image">
                 14 Stylish and User-Friendly App Design
                 Concepts · Task Manager App · Calorie Tracker
@@ -355,7 +359,7 @@
           </li>
           <li class="spisok-kontent-fourth-section">
             <div class="container-image">
-              <img src="./images/img5.jpg" alt="Cashless Payment" width="288" />
+              <img srcset="./images/img5.jpg x1, ./images/portfolio2-x2.jpg" src="./images/img5.jpg" alt="Banking app" width="288" />
               <p class="paragraph-image">
                 14 Stylish and User-Friendly App Design
                 Concepts · Task Manager App · Calorie Tracker
@@ -372,7 +376,7 @@
           </li>
           <li class="spisok-kontent-fourth-section">
             <div class="container-image">
-              <img src="./images/img4.jpg" alt="Meditation app" width="288" />
+              <img srcset="./images/img4.jpg x1, ./images/portfolio3-x2.jpg" src="./images/img4.jpg" alt="Banking app" width="288" />
               <p class="paragraph-image">
                 14 Stylish and User-Friendly App Design
                 Concepts · Task Manager App · Calorie Tracker
@@ -389,7 +393,7 @@
           </li>
           <li class="spisok-kontent-fourth-section">
             <div class="container-image">
-              <img src="./images/img3.jpg" alt="Taxi Service" width="288" />
+              <img srcset="./images/img3.jpg x1, ./images/portfolio4-x2.jpg" src="./images/img3.jpg" alt="Banking app" width="288" />
               <p class="paragraph-image">
                 14 Stylish and User-Friendly App Design
                 Concepts · Task Manager App · Calorie Tracker
@@ -406,7 +410,7 @@
           </li>
           <li class="spisok-kontent-fourth-section">
             <div class="container-image">
-              <img src="./images/img2.jpg" alt="Screen Illustrations" width="288" />
+              <img srcset="./images/img2.jpg x1, ./images/portfolio5-x2.jpg" src="./images/img2.jpg" alt="Banking app" width="288" />
               <p class="paragraph-image">
                 14 Stylish and User-Friendly App Design
                 Concepts · Task Manager App · Calorie Tracker
@@ -423,7 +427,7 @@
           </li>
           <li class="spisok-kontent-fourth-section">
             <div class="container-image">
-              <img src="./images/img.jpg" alt="Online Courses" width="288" />
+              <img srcset="./images/img x1, ./images/portfolio6-x2.jpg" src="./images/img.jpg" alt="Banking app" width="288" />
               <p class="paragraph-image">
                 14 Stylish and User-Friendly App Design
                 Concepts · Task Manager App · Calorie Tracker
@@ -487,18 +491,18 @@
       </div>
       <div class="modal-overlay">
         <p class="paragraph-overlay">Subscribe</p>
-        <div class="paragraph-label">
+        <form action="" class="paragraph-label">
 
           <label class="label-form-overlay">
             <input type="email" placeholder="E-mail" class="input-form" />
           </label>
-          <button class="button-form">
+          <button class="button-form" type="submit">
             Subscribe
             <svg id="icon-telegram" class="svg-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-telegram"></use>
             </svg>
           </button>
-        </div>
+        </form>
       </div>
     </div>
   </footer>
