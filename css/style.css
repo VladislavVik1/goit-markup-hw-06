@@ -200,6 +200,7 @@ p {
                 rgba(46, 47, 66, 0.7)),
             url(../images/hero-image-pc-x2.jpg);
         max-width: 1440px;
+
     }
 }
 
@@ -370,7 +371,7 @@ p {
         padding: 120px 0;
     }
     .section-one{
-        padding: 120px 0;
+        padding: 188px 0 188px 0;
     }
     .section-four{
         padding: 120px 0;
