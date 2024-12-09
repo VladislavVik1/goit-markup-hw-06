@@ -399,6 +399,13 @@ p {
 .container-social-links {
     margin-bottom: 72px;
 }
+@media screen and (max-width: 767px) {
+    .container-social-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+}
 @media screen and (min-width: 768px) {
     .spisok-three {
         display: flex;
@@ -418,12 +425,8 @@ p {
 .spisoktwo{
     flex-wrap: nowrap;
 }
-.container-link-paragraph-footer{
-    margin-right: 100px;
-    
-}
 .container-social-links{
-    margin-right: 30px;
+    margin: 0 30px 0 0;
 }
 .input-form{
     opacity: 1;
@@ -629,6 +632,11 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 72px;
+}
+@media screen and (min-width: 1158px){
+    .container-link-paragraph-footer{
+    margin: 0 100px 0 0;
+}
 }
 
 .button-form {
